@@ -1,4 +1,4 @@
-const URL_products = "http://localhost:8010/proxy/categories";
+const URL_products = "https://api-bsale-first.herokuapp.com/categories";
 
 //Getting Categories
 fetch(URL_products)
@@ -17,7 +17,7 @@ fetch(URL_products)
 
 //Getting Products
 
-const URL_categories = "http://localhost:8010/proxy/products";
+const URL_categories = "https://api-bsale-first.herokuapp.com/products";
 fetch(URL_categories)
 .then((data)=>{return data.json()}) 
 .then((completedata)=>{
