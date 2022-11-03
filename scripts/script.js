@@ -1,6 +1,7 @@
-const URL_products = "http://localhost:8010/proxy/categories";
 
 //Getting Categories
+const URL_products = "https://mycorsproxy-tuto1.herokuapp.com/https://api-bsale-first.herokuapp.com/categories";
+
 fetch(URL_products)
 .then((data)=>{return data.json()}) 
 .then((completedata)=>{
@@ -17,7 +18,8 @@ fetch(URL_products)
 
 //Getting Products
 
-const URL_categories = "http://localhost:8010/proxy/products";
+const URL_categories = "https://mycorsproxy-tuto1.herokuapp.com/https://api-bsale-first.herokuapp.com/products";
+
 fetch(URL_categories)
 .then((data)=>{return data.json()}) 
 .then((completedata)=>{

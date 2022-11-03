@@ -1,11 +1,11 @@
  //Searching data
-
+ 
 document.getElementById("button").addEventListener("click",showData)
 
 function showData(){
   let product = document.getElementById("input").value
 
-  let url = "http://localhost:8010/proxy/products/search?query="+product
+  let url = "https://mycorsproxy-tuto1.herokuapp.com/https://api-bsale-first.herokuapp.com/products/search?query="+product
   fetch (url)
   .then(res=>res.json())
   .then(data_new=>{
